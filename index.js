@@ -2,8 +2,7 @@
 // Создать функцию isWorkingAgePerson, которая будет проверять, трудоспособного ли человек возраста (от 16 до 65). Функция принимает в качестве параметра возраст человека и возвращает значение булевского типа. 
 
 function isWorkingAgePerson(age) {
-  const agePerson = (age >= 16 && age <= 65) ? true : false;
-  return agePerson;
+  return agePerson = (age >= 16 && age <= 65) ? true : false;
 }
 console.log(isWorkingAgePerson(18));
 
@@ -30,13 +29,7 @@ console.log(primeNumber(11));
 // Создать функцию checkMultiplicity, которая принимает два числа и проверяет, делится ли первое на второе нацело:
 
 function checkMultiplicity(a, b) {
-  if (a % b === 0) {
-    return true;
-  } else if (b > a) {
-    return false;
-  } else {
-    return false;
-  }
+  return (a % b === 0) ? true : false;
 }
 console.log(checkMultiplicity(15, 5));
 
@@ -44,8 +37,7 @@ console.log(checkMultiplicity(15, 5));
 
 // Проверка возможности треугольника. Создать функцию которая принимает длины треугольника; функция возвращает true, если треугольник возможен, и false, если нет.
 function isCorectTriangle(a, b, c) {
-  const corectTriangle = (a <= b + c && b <= c + a && c <= b + a) ? true : false;
-  return corectTriangle;
+  return corectTriangle = (a <= b + c && b <= c + a && c <= b + a) ? true : false; 
 }
 console.log(isCorectTriangle(5, 6, 8));
 
